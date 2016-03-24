@@ -40,7 +40,7 @@ body {
 }
 
 #hero-section {
-  background: url("../images/random_cinema.png") no-repeat center top #BCBCBC;
+  background: url("../images/the-electric-screen-1.png") no-repeat center top #BCBCBC;
   background-size: cover !important;
   color: #fff;
   padding-top: 200px;
@@ -64,6 +64,10 @@ body {
   margin: 0;
 }
 
+#menu-breaker {
+  padding-top: 5em;
+}
+
 .content-1 {
   background: url("../images/top_left.png") no-repeat top left, url("../images/top_right.png") no-repeat top right, url("../images/bottom.png") no-repeat bottom center;
   width: 100%;
@@ -85,6 +89,9 @@ body {
 .content-1 p {
   font-size: 18px;
   line-height: 28px;
+}
+footer {
+  background: #000000;
 }
 
 /*# sourceMappingURL=site.css.map */
