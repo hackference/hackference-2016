@@ -90,6 +90,10 @@ body {
   font-size: 18px;
   line-height: 28px;
 }
+hr {
+  background: url("../images/bottom.png") no-repeat bottom center;
+  padding: 60px;
+}
 footer {
   background: #000000;
 }
