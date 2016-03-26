@@ -103,8 +103,11 @@ hr {
 .background-images {
   padding: 5rem;
 }
-.background-images {
+.background-images#conference {
   background: url("../images/conference-bw.jpg") no-repeat bottom center;
+}
+.background-images#hackathon {
+  background: url("../images/hackathon-bw.jpg") no-repeat bottom center;
 }
 footer {
   background: #000000;
