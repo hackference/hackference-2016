@@ -1,8 +1,8 @@
 <div class="row">
   {% for speaker in site.speakers %}
   <div class="col-md-3 col-xs-6 speaker">
-    <a href='{{ site.url }}{{ site.baseurl }}{{ speaker.url }}'>
-      <img src='{{ site.url }}{{ site.baseurl }}/assets/{{ speaker.image }}' width="100%"/>
+    <a href='{{ speaker.url }}'>
+      <img src='/assets/images/{{ speaker.image }}' width="100%"/>
       {{ speaker.name }}
     </a>
     <p>{% if speaker.desc %}{{ speaker.desc }}{% endif %}</p>
