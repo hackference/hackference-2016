@@ -1,4 +1,5 @@
 name: Hackference 2016
+cfp: "http://cfp.hackference.co.uk"
 collections:
   speakers:
     output: true
