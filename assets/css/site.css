@@ -48,7 +48,7 @@ body {
   text-transform: uppercase;
   font-family: "Limelight", cursive;
 }
-#hero-section .hero-content h2 {
+#hero-section .hero-content h1 {
   background: url("../images/hero-top.png") no-repeat center top;
   margin: 0;
   padding: 80px 0 0;
@@ -86,6 +86,12 @@ body {
   margin: 0 0 20px;
   padding: 0;
 }
+.content-1 h1 a,
+.content-1 h2 a,
+.content-1 h3 a,
+.content-1 h4 a {
+  color: #7b2a2a;
+}
 .content-1 p {
   font-size: 18px;
   line-height: 28px;
@@ -93,6 +99,12 @@ body {
 hr {
   background: url("../images/bottom.png") no-repeat bottom center;
   padding: 60px;
+}
+.background-images {
+  padding: 5rem;
+}
+.background-images {
+  background: url("../images/conference-bw.jpg") no-repeat bottom center;
 }
 footer {
   background: #000000;
