@@ -1,1 +1,4 @@
 name: Hackference 2016
+collections:
+  speakers:
+    output: true

@@ -81,7 +81,7 @@ body {
 .content-1 h4 {
   font-family: "Limelight", cursive;
   color: #7b2a2a;
-  font-size: 38px;
+  /*font-size: 38px;*/
   line-height: 48px;
   margin: 0 0 20px;
   padding: 0;
