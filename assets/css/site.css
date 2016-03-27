@@ -118,7 +118,11 @@ hr {
   -webkit-filter: sepia(0%);
 }
 footer {
+  padding-top: 2rem;
   background: #000000;
+}
+footer a {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=site.css.map */
