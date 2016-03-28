@@ -55,7 +55,7 @@ body {
   font-family: "Limelight", cursive;
   font-size: 68px;
   line-height: 108px;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 black, 0 -1px #000000;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 #hero-section .hero-content h3 {
   padding: 0 0 250px;
@@ -127,6 +127,19 @@ hr {
   margin: 51px 0;
 }
 /* Sponsor */
+.sponsor.platinum {
+  color: #E5E4E2;
+}
+.sponsor.gold {
+  color: #DAA520;
+}
+.sponsor.silver {
+  color: #C0C0C0;
+}
+.sponsor.bronze {
+  color: #CD7F32;
+}
+
 footer {
   padding-top: 2rem;
   background: #000000;

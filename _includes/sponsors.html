@@ -9,36 +9,44 @@
             <!-- Platinum -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "platinum" %}
-                <div class="col-sm-3">
+                <div class="col-sm-3 sponsor platinum">
                   <img src="/assets/images/{{ sponsor.image }}" />
-                  Platinum
+                  <p>
+                    <i class="fa fa-trophy" ></i> Platinum
+                  </p>
                 </div>
               {% endif %}
             {% endfor %}
             <!-- Gold -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "gold" %}
-                <div class="col-sm-3">
+                <div class="col-sm-3 sponsor gold">
                   <img src="/assets/images/{{ sponsor.image }}" />
-                  Gold
+                  <p>
+                    <i class="fa fa-trophy" ></i> Gold
+                  </p>
                 </div>
               {% endif %}
             {% endfor %}
             <!-- Silver -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "silver" %}
-                <div class="col-sm-3">
+                <div class="col-sm-3 sponsor silver">
                   <img src="/assets/images/{{ sponsor.image }}" />
-                  Silver
+                  <p>
+                    <i class="fa fa-trophy" ></i> Silver
+                  </p>
                 </div>
               {% endif %}
             {% endfor %}
             <!-- Bronze -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "bronze" %}
-                <div class="col-sm-3">
+                <div class="col-sm-3 sponsor bronze">
                   <img src="/assets/images/{{ sponsor.image }}" />
-                  Bronze
+                  <p>
+                    <i class="fa fa-trophy" ></i> Bronze
+                  </p>
                 </div>
               {% endif %}
             {% endfor %}
