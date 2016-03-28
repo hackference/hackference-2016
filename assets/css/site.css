@@ -40,7 +40,7 @@ body {
 }
 
 #hero-section {
-  background: url("/assets/images/the-electric-screen-1.png") no-repeat center top #BCBCBC;
+  background: url("/assets/images/the-electric-screen-1-sepia.png") no-repeat center top #BCBCBC;
   background-size: cover !important;
   color: #fff;
   padding-top: 200px;
@@ -55,6 +55,7 @@ body {
   font-family: "Limelight", cursive;
   font-size: 68px;
   line-height: 108px;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 black, 0 -1px #000000;
 }
 #hero-section .hero-content h3 {
   padding: 0 0 250px;
