@@ -1,0 +1,91 @@
+---
+layout: default
+title: Thanks to our sponsors
+---
+<h1>Sponsors</h1>
+<p>
+  Hackference is made possible with the help of our sponsors, we couldn't provide the experience without them.
+  Please take a look and visit them, if you'd like to join our list of sponsors <a href="/sponsor/sponsor-us.html" >visit our sponsorships page</a>  to view all of our sponsorship options.
+</p>
+<!-- Platinum -->
+<h2 class="sponsor platinum text-left"><i class="fa fa-trophy" ></i> Platinum</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "platinum" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <img src="/assets/images/{{ sponsor.image }}" />
+      </div>
+      <div class="col-sm-9">
+        <h3>{{ sponsor.name }}</h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+  <!-- Gold -->
+<h2 class="sponsor gold text-left"><i class="fa fa-trophy" ></i> Gold</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "gold" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <img src="/assets/images/{{ sponsor.image }}" />
+      </div>
+      <div class="col-sm-9">
+        <h3>{{ sponsor.name }}</h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- Silver -->
+<h2 class="sponsor silver text-left"><i class="fa fa-trophy" ></i> Silver</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "silver" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <img src="/assets/images/{{ sponsor.image }}" />
+      </div>
+      <div class="col-sm-9">
+        <h3>{{ sponsor.name }}</h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- Bronze -->
+<h2 class="sponsor bronze text-left"><i class="fa fa-trophy" ></i> Bronze</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "bronze" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <a href="{{ sponsor.url }}" >
+          <img src="/assets/images/{{ sponsor.image }}" />
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <h3><a href="{{ sponsor.url }}" >{{ sponsor.name }}</a></h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
