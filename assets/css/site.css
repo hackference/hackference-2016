@@ -110,6 +110,7 @@ hr {
 .background-images#hackathon {
   background: url("/assets/images/hackathon-bw.jpg") no-repeat bottom center;
 }
+/* Speaker */
 .speaker a {
   font-family: "Limelight", cursive;
   color: #7b2a2a;
@@ -122,6 +123,10 @@ hr {
 .speaker a:hover img {
   -webkit-filter: sepia(0%);
 }
+.speak-yourself {
+  margin: 51px 0;
+}
+/* Sponsor */
 footer {
   padding-top: 2rem;
   background: #000000;
