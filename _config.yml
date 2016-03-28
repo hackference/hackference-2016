@@ -3,3 +3,5 @@ cfp: "http://cfp.hackference.co.uk"
 collections:
   speakers:
     output: true
+  sponsors:
+    output: true

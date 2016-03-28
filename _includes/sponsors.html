@@ -5,6 +5,40 @@
         <div class="content-1">
 
           <h2>Our Sponsors</h2>
+          <div class="row" >
+            {% for sponsor in site.sponsors %}
+              {% if sponsor.level == "platinum" %}
+                <div class="col-sm-3">
+                  <img src="/assets/images/{{ sponsor.image }}" />
+                  Platinum
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% for sponsor in site.sponsors %}
+              {% if sponsor.level == "gold" %}
+                <div class="col-sm-3">
+                  <img src="/assets/images/{{ sponsor.image }}" />
+                  Gold
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% for sponsor in site.sponsors %}
+              {% if sponsor.level == "silver" %}
+                <div class="col-sm-3">
+                  <img src="/assets/images/{{ sponsor.image }}" />
+                  Silver
+                </div>
+              {% endif %}
+            {% endfor %}
+            {% for sponsor in site.sponsors %}
+              {% if sponsor.level == "bronze" %}
+                <div class="col-sm-3">
+                  <img src="/assets/images/{{ sponsor.image }}" />
+                  Bronze
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
 
         </div>
       </div>
