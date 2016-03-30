@@ -6,46 +6,46 @@
 
           <h2>Our Sponsors</h2>
           <div class="row" >
-            <!-- Platinum -->
+            <!-- Executive Producer/Platinum -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "platinum" %}
-                <div class="col-sm-3 sponsor platinum">
+                <div class="col-sm-3 sponsor">
                   <img src="/assets/images/{{ sponsor.image }}" />
                   <p>
-                    <i class="fa fa-trophy" ></i> Platinum
+                    Executive Producer
                   </p>
                 </div>
               {% endif %}
             {% endfor %}
-            <!-- Gold -->
+            <!-- Associate Producer/Gold -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "gold" %}
-                <div class="col-sm-3 sponsor gold">
+                <div class="col-sm-3 sponsor">
                   <img src="/assets/images/{{ sponsor.image }}" />
                   <p>
-                    <i class="fa fa-trophy" ></i> Gold
+                    Associate Producer
                   </p>
                 </div>
               {% endif %}
             {% endfor %}
-            <!-- Silver -->
+            <!-- Assistant Producer/Silver -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "silver" %}
-                <div class="col-sm-3 sponsor silver">
+                <div class="col-sm-3 sponsor">
                   <img src="/assets/images/{{ sponsor.image }}" />
                   <p>
-                    <i class="fa fa-trophy" ></i> Silver
+                    Assistant Producer
                   </p>
                 </div>
               {% endif %}
             {% endfor %}
-            <!-- Bronze -->
+            <!-- Coordinating Producer/Bronze -->
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "bronze" %}
-                <div class="col-sm-3 sponsor bronze">
+                <div class="col-sm-3 sponsor">
                   <img src="/assets/images/{{ sponsor.image }}" />
                   <p>
-                    <i class="fa fa-trophy" ></i> Bronze
+                    Coordinating Producer
                   </p>
                 </div>
               {% endif %}
