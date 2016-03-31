@@ -11,6 +11,10 @@ layout: default
   </div>
   <div class="col-sm-8">
     <h1>Starring {{ page.name }}</h1>
-    <p>{{ page.description }}</p>
+    <div markdown="1">
+      {% capture x %}
+        {{ page.description }}
+      {% endcapture %}{{ x | markdownify }}
+    </div>
   </div>
 </div>
