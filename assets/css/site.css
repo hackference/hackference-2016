@@ -13,8 +13,12 @@ body {
   position: absolute;
   top: 0;
   z-index: 99;
-  height: 70px;
+  /*height: 70px;*/
   width: 100%;
+}
+#top-header-bar .navbar-toggle {
+  float: none;
+  color: #FFF;
 }
 #top-header-bar h1 {
   margin: 0;
@@ -23,13 +27,14 @@ body {
 }
 #top-header-bar ul.top-nav {
   float: right;
-  margin: 0;
+  width: 100%;
+  /*margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none;*/
 }
 #top-header-bar ul.top-nav li {
-  float: left;
-  margin-right: 25px;
+  /*float: left;
+  margin-right: 25px;*/
   font-size: 1.4rem;
   line-height: 70px;
   font-weight: 700;
