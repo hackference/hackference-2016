@@ -11,10 +11,12 @@
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "platinum" %}
                 <div class="col-sm-3 sponsor">
-                  <img src="/assets/images/{{ sponsor.image }}" />
-                  <p>
-                    Executive Producer
-                  </p>
+                  <a href="{{ sponsor.website }}">
+                    <img src="/assets/images/{{ sponsor.image }}" />
+                    <p>
+                      Executive Producer
+                    </p>
+                  </a>
                 </div>
               {% endif %}
             {% endfor %}
@@ -22,10 +24,12 @@
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "gold" %}
                 <div class="col-sm-3 sponsor">
-                  <img src="/assets/images/{{ sponsor.image }}" />
-                  <p>
-                    Associate Producer
-                  </p>
+                  <a href="{{ sponsor.website }}">
+                    <img src="/assets/images/{{ sponsor.image }}" />
+                    <p>
+                      Associate Producer
+                    </p>
+                  </a>
                 </div>
               {% endif %}
             {% endfor %}
@@ -33,10 +37,12 @@
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "silver" %}
                 <div class="col-sm-3 sponsor">
-                  <img src="/assets/images/{{ sponsor.image }}" />
-                  <p>
-                    Assistant Producer
-                  </p>
+                  <a href="{{ sponsor.website }}">
+                    <img src="/assets/images/{{ sponsor.image }}" />
+                    <p>
+                      Assistant Producer
+                    </p>
+                  </a>
                 </div>
               {% endif %}
             {% endfor %}
@@ -44,10 +50,12 @@
             {% for sponsor in site.sponsors %}
               {% if sponsor.level == "bronze" %}
                 <div class="col-sm-3 sponsor">
-                  <img src="/assets/images/{{ sponsor.image }}" />
-                  <p>
-                    Coordinating Producer
-                  </p>
+                  <a href="{{ sponsor.website }}">
+                    <img src="/assets/images/{{ sponsor.image }}" />
+                    <p>
+                      Coordinating Producer
+                    </p>
+                  </a>
                 </div>
               {% endif %}
             {% endfor %}
