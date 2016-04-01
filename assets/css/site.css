@@ -43,6 +43,10 @@ body {
 #top-header-bar ul.top-nav li a {
   color: #FFF;
 }
+#top-header-bar ul.top-nav li a:hover {
+  color: #7b2a2a;
+  font-weight: 700;
+}
 
 #hero-section {
   background: url("/assets/images/the-electric-screen-1-sepia.png") no-repeat center top #BCBCBC;
