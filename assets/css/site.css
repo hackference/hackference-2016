@@ -119,11 +119,17 @@ hr {
 .background-images#hackathon {
   background: url("/assets/images/hackathon-bw.jpg") no-repeat bottom center;
 }
+.background-images#hack {
+  background: url("/assets/images/hack.png") no-repeat bottom center;
+}
 .background-images#speakers {
   background: url("/assets/images/speakers.png") no-repeat bottom center;
 }
 .background-images#food {
   background: url("/assets/images/food.png") no-repeat bottom center;
+}
+.background-images#breakfast {
+  background: url("/assets/images/breakfast.png") no-repeat bottom center;
 }
 /* Speaker */
 .speaker a {
