@@ -162,7 +162,7 @@ hr {
 }
 
 footer {
-  padding-top: 2rem;
+  padding: 2rem 0;
   background: #000000;
 }
 footer a {
