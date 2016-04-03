@@ -169,4 +169,93 @@ footer a {
   color: #ffffff;
 }
 
+/* TiTo Styling */
+.tito-wrapper ul {
+  list-style: none;
+}
+.tito-wrapper .tito-ticket {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #CCC;
+}
+.tito-wrapper .tito-ticket .tito-ticket-name-wrapper {
+  float: left;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper {
+  float: right;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-price,
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-quantity {
+  display: inline;
+}
+.tito-discount-code-edit .tito-discount-code-field {
+  float: left;
+  width: 90%;
+}
+.tito-discount-code-edit .tito-discount-apply-button {
+  float: left;
+  width: 10%;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #7b2a2a;
+  background: #FFFFFF;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-discount-code-edit .tito-discount-apply-button:hover {
+  color: #FFFFFF;
+  background: #7b2a2a;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-wrapper .tito-submit-wrapper {
+  text-align: right;
+}
+.tito-wrapper .tito-submit-wrapper .tito-submit {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #7b2a2a;
+  background: #FFFFFF;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-wrapper .tito-submit-wrapper .tito-submit:hover {
+  color: #FFFFFF;
+  background: #7b2a2a;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-wrapper .tito-badge-link {
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=site.css.map */
