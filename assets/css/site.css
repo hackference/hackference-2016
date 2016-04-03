@@ -180,8 +180,25 @@ footer a {
 .tito-wrapper .tito-ticket .tito-ticket-name-wrapper {
   float: left;
 }
+.tito-wrapper .tito-ticket .tito-ticket-name-wrapper .tito-ticket-name {
+  display: inline;
+  text-align: left;
+  width: 200px;
+  vertical-align: top;
+}
+.tito-wrapper .tito-ticket .tito-ticket-name-wrapper .tito-ticket-description {
+  display: inline-block;;
+  max-width: 500px;
+  vertical-align: top;
+}
 .tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper {
   float: right;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-donation-field {
+  width: 100px;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-quantity-field {
+  width: 50px;
 }
 .tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-price,
 .tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-quantity {
