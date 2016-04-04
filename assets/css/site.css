@@ -190,7 +190,7 @@ footer a {
   vertical-align: top;
 }
 .tito-wrapper .tito-ticket .tito-ticket-name-wrapper .tito-ticket-description {
-  display: inline-block;;
+  display: none;
   max-width: 500px;
   vertical-align: top;
 }
