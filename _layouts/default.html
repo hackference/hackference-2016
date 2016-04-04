@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
-
-{% include head.html %}
-
-<body>
-
-  {% include header.html %}
-
-  <div id="content">
-    <div class="container">
-      <div class="col-md-6 col-md-offset-3 text-center">
-
-        {{ content }}
-
-      </div>
-    </div>
-  </div>
-
-  {% include footer.html %}
-
-  {% include tracking.html %}
-</body>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div id="menu-breaker"></div>
+    <!-- Content type 1 -->
+    <div class="content">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-sm-10 col-sm-offset-1">
+            <div class="content-1">
+  					  {{ content }}
+					  </div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+    <!-- /Content type 1 -->
+    {% include sponsors.html %}
+    {% include footer.html %}
+    {% include javascript.html %}
+    {% include tracking.html %}
+  </body>
 </html>

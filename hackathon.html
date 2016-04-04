@@ -1,0 +1,58 @@
+---
+layout: default
+title: And now, the Hackathon
+---
+<h1>Hackathon</h1>
+<div class="row">
+  <div class="col-sm-6" >
+  <h3>The Stars</h3>
+  <div id="hack" class="background-images" ></div>
+  <p>We will have plenty of API's and technology for you to play with. Lot's to hack on!</p>
+  </div>
+  <div class="col-sm-6" >
+    <h3>Snacks, Drinks &amp; Meals</h3>
+    <div id="breakfast" class="background-images" ></div>
+    <p>You'll find plenty of meals, snacks and drinks. Enough to fuel your hacks for 24 hours.</p>
+  </div>
+</div>
+
+<h2>The Location</h2>
+<p>
+  We are at <a href="http://birmingham.impacthub.net/" >Impact Hub Birmingham</a> again this year.
+  Impact Hub is a fantastic coworking space, a community of purpose driven makers, doers, entrepreneurs, activists and dreamers committed to building a better city and world.
+</p>
+<div class="row">
+  <div class="col-sm-6" >
+    {% include hackathon-map.html %}
+  </div>
+  <div class="col-sm-6 text-left" >
+    <p>
+      Impact Hub Birmingham
+      <br/>
+      Walker Building
+      <br/>
+      58 Oxford Street
+      <br/>
+      Birmingham
+      <br/>
+      B5 5NY
+    </p>
+  </div>
+</div>
+
+<h2>Hack Partners</h2>
+<p>Some amazing companies are bringing some fantastic tech for you to play with at the hackathon.</p>
+<div class="row" >
+{% for sponsor in site.sponsors %}
+  {% if sponsor.hackapi %}
+    <div class="col-sm-3 sponsor">
+      <a href="{{ sponsor.url }}">
+        <img src="/assets/images/{{ sponsor.image }}" />
+        <p>
+          {{ sponsor.name }}
+        </p>
+      </a>
+    </div>
+  {% endif %}
+{% endfor %}
+</row>
