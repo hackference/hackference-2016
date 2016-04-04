@@ -44,6 +44,7 @@ body {
   color: #FFF;
 }
 #top-header-bar ul.top-nav li a:hover {
+  background-color: transparent;
   color: #7b2a2a;
   font-weight: 700;
 }
