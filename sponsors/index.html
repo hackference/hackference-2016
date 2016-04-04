@@ -1,0 +1,92 @@
+---
+layout: default
+title: Thanks to our sponsors
+---
+<h1>Sponsors</h1>
+<p>
+  Our sponsors are what make Hackference possible, without them we couldn't provide the quality experience we strive for.
+  We greatly appreciate the support of the awesome companies listed below.<br>
+  If you're interested in becoming a sponsor, please visit our <a href="/sponsors/sponsor-us.html">sponsorships page</a>  to view our sponsorship options.
+</p>
+<!-- Executive Producer/Platinum -->
+<h2 class="sponsor text-left">Executive Producer</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "platinum" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <img src="/assets/images/{{ sponsor.image }}" />
+      </div>
+      <div class="col-sm-9">
+        <h3>{{ sponsor.name }}</h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+  <!-- Associate Producer/Gold -->
+<h2 class="sponsor text-left">Associate Producer</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "gold" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <img src="/assets/images/{{ sponsor.image }}" />
+      </div>
+      <div class="col-sm-9">
+        <h3>{{ sponsor.name }}</h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- Assistant Producer/Silver -->
+<h2 class="sponsor text-left">Assistant Producer</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "silver" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <img src="/assets/images/{{ sponsor.image }}" />
+      </div>
+      <div class="col-sm-9">
+        <h3>{{ sponsor.name }}</h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- Coordinating Producer/Bronze -->
+<h2 class="sponsor text-left">Coordinating Producer</h2>
+{% for sponsor in site.sponsors %}
+  {% if sponsor.level == "bronze" %}
+    <div class="row text-left" >
+      <div class="col-sm-3">
+        <a href="{{ sponsor.url }}" >
+          <img src="/assets/images/{{ sponsor.image }}" />
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <h3><a href="{{ sponsor.url }}" >{{ sponsor.name }}</a></h3>
+        <p>
+          {{ sponsor.description }}
+        </p>
+        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
+        {% if sponsor.twitter %}<p><a href="{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
+        {% if sponsor.github %}<p><a href="{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

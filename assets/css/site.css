@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Limelight);
+body {
+  color: #656565;
+  background: #f5f5f5;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 16px;
+}
+
+#top-header-bar {
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  /*height: 70px;*/
+  width: 100%;
+}
+#top-header-bar .navbar-toggle {
+  float: none;
+  color: #FFF;
+}
+#top-header-bar h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 70px;
+}
+#top-header-bar ul.top-nav {
+  float: right;
+  width: 100%;
+  /*margin: 0;
+  padding: 0;
+  list-style: none;*/
+}
+#top-header-bar ul.top-nav li {
+  /*float: left;
+  margin-right: 25px;*/
+  font-size: 1.4rem;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#top-header-bar ul.top-nav li a {
+  color: #FFF;
+}
+#top-header-bar ul.top-nav li a:hover {
+  color: #7b2a2a;
+  font-weight: 700;
+}
+
+#hero-section {
+  background: url("/assets/images/the-electric-screen-1-sepia.png") no-repeat center top #BCBCBC;
+  background-size: cover !important;
+  color: #fff;
+  padding-top: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Limelight", cursive;
+}
+#hero-section .hero-content h1 {
+  background: url("/assets/images/hero-top.png") no-repeat center top;
+  margin: 0;
+  padding: 80px 0 0;
+  font-family: "Limelight", cursive;
+  font-size: 68px;
+  line-height: 108px;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+#hero-section .hero-content h3 {
+  padding: 0 0 250px;
+  font-family: "Limelight", cursive;
+  font-size: 38px;
+  line-height: 48px;
+  margin: 0;
+}
+
+#menu-breaker {
+  padding-top: 5em;
+}
+
+.content-1 {
+  background: url("/assets/images/top_left.png") no-repeat top left, url("/assets/images/top_right.png") no-repeat top right, url("/assets/images/bottom.png") no-repeat bottom center;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+  padding: 60px 60px 120px;
+}
+.content-1 h1,
+.content-1 h2,
+.content-1 h3,
+.content-1 h4 {
+  font-family: "Limelight", cursive;
+  color: #7b2a2a;
+  /*font-size: 38px;*/
+  line-height: 48px;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.content-1 h1 a,
+.content-1 h2 a,
+.content-1 h3 a,
+.content-1 h4 a {
+  color: #7b2a2a;
+}
+.content-1 p {
+  font-size: 18px;
+  line-height: 28px;
+}
+hr {
+  background: url("/assets/images/bottom.png") no-repeat bottom center;
+  padding: 60px;
+}
+.background-images {
+  padding: 5rem;
+}
+.background-images#conference {
+  background: url("/assets/images/conference-bw.jpg") no-repeat bottom center;
+}
+.background-images#hackathon {
+  background: url("/assets/images/hackathon-bw.jpg") no-repeat bottom center;
+}
+.background-images#hack {
+  background: url("/assets/images/hack.png") no-repeat bottom center;
+}
+.background-images#speakers {
+  background: url("/assets/images/speakers.png") no-repeat bottom center;
+}
+.background-images#food {
+  background: url("/assets/images/food.png") no-repeat bottom center;
+}
+.background-images#breakfast {
+  background: url("/assets/images/breakfast.png") no-repeat bottom center;
+}
+/* Speaker */
+.speaker a {
+  font-family: "Limelight", cursive;
+  color: #7b2a2a;
+}
+.speaker a img {
+  -webkit-filter: sepia(100%);
+  -webkit-transition: -webkit-filter 2s; /* Safari */
+  transition: -webkit-filter 2s;
+}
+.speaker a:hover img {
+  -webkit-filter: sepia(0%);
+}
+.speak-yourself {
+  margin: 51px 0;
+}
+/* Sponsor */
+.sponsor.platinum {
+  color: #E5E4E2;
+}
+.sponsor.gold {
+  color: #DAA520;
+}
+.sponsor.silver {
+  color: #C0C0C0;
+}
+.sponsor.bronze {
+  color: #CD7F32;
+}
+ul#stats {
+  list-style: none;
+}
+footer {
+  padding: 2rem 0;
+  background: #000000;
+}
+footer a {
+  color: #ffffff;
+}
+
+/* TiTo Styling */
+.tito-wrapper ul {
+  list-style: none;
+}
+.tito-wrapper .tito-ticket {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #CCC;
+}
+.tito-wrapper .tito-ticket .tito-ticket-name-wrapper {
+  float: left;
+}
+.tito-wrapper .tito-ticket .tito-ticket-name-wrapper .tito-ticket-name {
+  display: inline;
+  text-align: left;
+  width: 200px;
+  vertical-align: top;
+}
+.tito-wrapper .tito-ticket .tito-ticket-name-wrapper .tito-ticket-description {
+  display: inline-block;;
+  max-width: 500px;
+  vertical-align: top;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper {
+  float: right;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-donation-field {
+  width: 100px;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-quantity-field {
+  width: 50px;
+}
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-price,
+.tito-wrapper .tito-ticket .tito-ticket-price-quantity-wrapper .tito-ticket-quantity {
+  display: inline;
+}
+.tito-discount-code-edit .tito-discount-code-field {
+  float: right;
+  width: 40%;
+}
+.tito-discount-code-edit .tito-discount-apply-button {
+  float: right;
+  width: 10%;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #7b2a2a;
+  background: #FFFFFF;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-discount-code-edit .tito-discount-apply-button:hover {
+  color: #FFFFFF;
+  background: #7b2a2a;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-wrapper .tito-submit-wrapper {
+  text-align: right;
+}
+.tito-wrapper .tito-submit-wrapper .tito-submit {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #7b2a2a;
+  background: #FFFFFF;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-wrapper .tito-submit-wrapper .tito-submit:hover {
+  color: #FFFFFF;
+  background: #7b2a2a;
+  border: 0.1rem solid #7b2a2a;
+}
+.tito-wrapper .tito-badge-link {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=site.css.map */

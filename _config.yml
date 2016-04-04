@@ -1,0 +1,10 @@
+name: Hackference 2016
+markdown: kramdown
+kramdown:
+  input: GFM
+cfp: "https://www.papercall.io/hackference-2016"
+collections:
+  speakers:
+    output: true
+  sponsors:
+    output: true

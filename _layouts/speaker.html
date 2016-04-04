@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="row" >
+  <div class="col-sm-4" >
+    <img src="/assets/images/{{ page.image }}" width="100%" />
+    {% if page.tagline %}<p><em>{{ page.tagline }}</em></p>{% endif %}
+    {% if page.github %}<p class="text-left"><a href='https://github.com/{{ page.github }}'><i class="fa fa-github"></i> {{ page.github }}</a></p>{% endif %}
+    {% if page.twitter %}<p class="text-left"><a href='https://twitter.com/{{ page.twitter }}'><i class="fa fa-twitter"></i> @{{ page.twitter }}</a></p>{% endif %}
+    {% if page.website %}<p class="text-left"><a href='{{ page.website }}'><i class="fa fa-globe"></i> {{ page.website }}</a></p>{% endif %}
+  </div>
+  <div class="col-sm-8">
+    <h1>Starring {{ page.name }}</h1>
+    <div markdown="1">
+      {% capture x %}
+        {{ page.description }}
+      {% endcapture %}{{ x | markdownify }}
+    </div>
+  </div>
+</div>
