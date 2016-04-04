@@ -160,7 +160,9 @@ hr {
 .sponsor.bronze {
   color: #CD7F32;
 }
-
+ul#stats {
+  list-style: none;
+}
 footer {
   padding: 2rem 0;
   background: #000000;
