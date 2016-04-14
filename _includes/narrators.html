@@ -1,7 +1,7 @@
 <div class="row">
   {% for speaker in site.speakers %}
     {% if speaker.narrator %}
-      <div class="col-md-3 col-xs-6 speaker">
+      <div class="col-md-3 col-md-offset-2 col-xs-6 speaker">
         <a href='/speakers/{{ speaker.url }}'>
           <img src='/assets/images/{{ speaker.image }}' width="100%"/>
           {{ speaker.name }}
