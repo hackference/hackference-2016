@@ -80,11 +80,11 @@ body {
 }
 
 .content-1 {
-  background: url("/assets/images/top_left.png") no-repeat top left, url("/assets/images/top_right.png") no-repeat top right, url("/assets/images/bottom.png") no-repeat bottom center;
+  background: url("/assets/images/top_left.png") no-repeat top left, url("/assets/images/top_right.png") no-repeat top right;
   width: 100%;
   text-align: center;
   margin: 40px 0;
-  padding: 60px 60px 120px;
+  padding: 60px 60px 0px;
 }
 .content-1 h1,
 .content-1 h2,
