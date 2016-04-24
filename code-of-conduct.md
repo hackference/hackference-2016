@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Code of Conduct
+layout: blank
+title: Code of Conduct for Hackference 2016
 ---
-# Code of Conduct for Hackference 2016
-
 Hackference is a conference and hackathon based around learning and inspiring developers to hack.
 
 We value the participation of each member of the community and want all attendees to have an enjoyable and fulfilling experience. Accordingly, all attendees of Hackference 2016 are expected to show respect and courtesy to other people throughout the event. This applies to everyone whether or not they are officially part of the Hackference 2016 event.
