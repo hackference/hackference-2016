@@ -1,68 +1,66 @@
 <div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
-        <div class="content-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header border">Our Sponsors</h4>
+			</div>
+			<!-- Top level sponsorship get col-6 -->
+			<div class="row">
+        <!-- Executive Producer/Platinum -->
+        {% for sponsor in site.sponsors %}
+          {% if sponsor.level == "platinum" %}
+            <div class="col-sm-6 col-xs-12 sponsor">
+              <a href="{{ sponsor.website }}">
+                <img src="/assets/images/{{ sponsor.image }}" width="100%">
+      					<div class="sponsor-name">{{ sponsor.name }}</div>
+      					<div class="sponsor-meta">Executive Producer</div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+			</div>
+			<!-- Second level sponsorship get col-4 -->
+			<div class="row">
+        <!-- Associate Producer/Gold -->
+        {% for sponsor in site.sponsors %}
+          {% if sponsor.level == "gold" %}
+    				<div class="col-sm-4 col-xs-6 sponsor">
+              <a href="{{ sponsor.website }}">
+                <img src="/assets/images/{{ sponsor.image }}"  width="100%">
+      					<div class="sponsor-name smaller">{{ sponsor.name }}</div>
+      					<div class="sponsor-meta smaller">Associate Producer</div>
+              </a>
+    				</div>
+          {% endif %}
+        {% endfor %}
+			</div>
+			<!-- Rest sponsorship get col-3 -->
+			<div class="row">
+        <!-- Assistant Producer/Silver -->
+        {% for sponsor in site.sponsors %}
+          {% if sponsor.level == "silver" %}
+            <div class="col-sm-3 sponsor">
+              <a href="{{ sponsor.website }}">
+                <img src="/assets/images/{{ sponsor.image }}" width="100%">
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+			</div>
+			<!-- Rest sponsorship get col-3 -->
+			<div class="row">
+        <!-- Coordinating Producer/Bronze -->
+        {% for sponsor in site.sponsors %}
+          {% if sponsor.level == "bronze" %}
+            <div class="col-sm-3 sponsor">
+              <a href="{{ sponsor.website }}">
+                <img src="/assets/images/{{ sponsor.image }}" width="100%">
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+			</div>
 
-          <h2>Our Sponsors</h2>
-          <p><a href="/sponsors" >Learn More</a></p>
-          <div class="row" >
-            <!-- Executive Producer/Platinum -->
-            {% for sponsor in site.sponsors %}
-              {% if sponsor.level == "platinum" %}
-                <div class="col-sm-3 sponsor">
-                  <a href="{{ sponsor.website }}">
-                    <img src="/assets/images/{{ sponsor.image }}" />
-                    <p>
-                      Executive Producer
-                    </p>
-                  </a>
-                </div>
-              {% endif %}
-            {% endfor %}
-            <!-- Associate Producer/Gold -->
-            {% for sponsor in site.sponsors %}
-              {% if sponsor.level == "gold" %}
-                <div class="col-sm-3 sponsor">
-                  <a href="{{ sponsor.website }}">
-                    <img src="/assets/images/{{ sponsor.image }}" />
-                    <p>
-                      Associate Producer
-                    </p>
-                  </a>
-                </div>
-              {% endif %}
-            {% endfor %}
-            <!-- Assistant Producer/Silver -->
-            {% for sponsor in site.sponsors %}
-              {% if sponsor.level == "silver" %}
-                <div class="col-sm-3 sponsor">
-                  <a href="{{ sponsor.website }}">
-                    <img src="/assets/images/{{ sponsor.image }}" />
-                    <p>
-                      Assistant Producer
-                    </p>
-                  </a>
-                </div>
-              {% endif %}
-            {% endfor %}
-            <!-- Coordinating Producer/Bronze -->
-            {% for sponsor in site.sponsors %}
-              {% if sponsor.level == "bronze" %}
-                <div class="col-sm-3 sponsor">
-                  <a href="{{ sponsor.website }}">
-                    <img src="/assets/images/{{ sponsor.image }}" />
-                    <p>
-                      Coordinating Producer
-                    </p>
-                  </a>
-                </div>
-              {% endif %}
-            {% endfor %}
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+		</div>
+	</div>
 </div>

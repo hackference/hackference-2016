@@ -1,37 +1,34 @@
-<!-- Top Bar Section with Menu -->
-<div id="top-header-bar">
+<div id="hero">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h1>
-          <a href="/">
-            <img src="/assets/images/logo.png" width="100%">
-          </a>
-        </h1>
-			</div>
-			<div class="col-sm-8">
-				<nav class="navbar">
-				  <!-- Brand and toggle get grouped for better mobile display -->
-				  <div class="navbar-header text-center">
-				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				      <span class="sr-only">Toggle navigation</span>
-				      Menu
-				    </button>
-				  </div>
-
-				  <!-- Collect the nav links, forms, and other content for toggling -->
-				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				    <ul class="top-nav nav navbar-nav text-center">
-							<li><a href="/tickets.html">Tickets</a></li>
-							<li><a href="/conference.html">Conference</a></li>
-							<li><a href="/hackathon.html">Hackathon</a></li>
-							<li><a href="/sponsors">Sponsors</a></li>
-							<li><a href="/code-of-conduct.html">Code of Conduct</a></li>
-				    </ul>
-				  </div><!-- /.navbar-collapse -->
-				</nav>
+		<div class="col-md-12">
+			<h1>Hackference 2016</h1>
+			<h2>21st - 23rd October 2016, Birmingham UK</h2>
+			<div class="hero-tickets">
+				<a href="/tickets.html" class="art-deco-button">Early Bird Tickets - £60</a>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- /Top Bar Section with Menu -->
+<div id="header">
+	<div class="slicknav_menu">
+		<a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">Menu</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
+		<ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+			<li><a href="/tickets.html" class="{% if page.current == "tickets" %}active{% endif %}" role="menuitem" tabindex="-1">Tickets</a></li>
+			<li><a href="/conference.html" class="{% if page.current == "conference" %}active{% endif %}" role="menuitem" tabindex="-1">Conference</a></li>
+			<li><a href="/hackathon.html" class="{% if page.current == "hackathon" %}active{% endif %}" role="menuitem" tabindex="-1">Hackathon</a></li>
+			<li><a href="/sponsors" class="{% if page.current == "sponsor" %}active{% endif %}" role="menuitem" tabindex="-1">Sponsors</a></li>
+			<li><a href="/code-of-conduct.html" class="{% if page.current == "code-of-conduct" %}active{% endif %}" role="menuitem" tabindex="-1">Code of conduct</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="col-md-12">
+			<ul id="menu" class="top-nav hidden-sm hidden-xs">
+				<li><a href="/tickets.html" class="{% if page.current == "tickets" %}active{% endif %}">Tickets</a></li>
+				<li><a href="/conference.html" class="{% if page.current == "conference" %}active{% endif %}">Conference</a></li>
+				<li><a href="/hackathon.html" class="{% if page.current == "hackathon" %}active{% endif %}">Hackathon</a></li>
+				<li><a href="/sponsors" class="{% if page.current == "sponsor" %}active{% endif %}">Sponsors</a></li>
+				<li><a href="/code-of-conduct.html" class="{% if page.current == "code-of-conduct" %}active{% endif %}">Code of conduct</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
