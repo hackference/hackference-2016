@@ -2,46 +2,59 @@
 layout: default
 title: What's on at the conference
 ---
-<h1>Conference</h1>
-<div class="row">
-  <div class="col-sm-6" >
-  <h3>The Stars</h3>
-  <div id="speakers" class="background-images" ></div>
-  <p>A <a href="/conference.html#cast" >great cast of speakers</a> covering a full spectrum of topics. From languages and paradigms to API's and hobby projects, something for everyone.</p>
-  </div>
-  <div class="col-sm-6" >
-    <h3>On the day</h3>
-    <div id="food" class="background-images" ></div>
-    <p>During the day at the conference you'll get drinks, snacks and lunch. And plenty of things for you to do between <a href="/conference.html#schedule" >talks</a>.</p>
-  </div>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="big-intro">Now in its forth year, the Hackference Conference portion is being held in its most beautifully unique venue yet! We are taking over <a href="https://www.theelectric.co.uk/">The Electric</a> in Birmingham, to have an amazing cast of speakers cover a full spectrum of topics. From languages and paradigms to API's and hobby projects, there is something for everyone. So if you are new to programming and computers, an industry expert or anywhere inbetween the two - you do not want to miss out.</p>
+				<p class="big-intro">As usual, we'll make sure you will have the best conference lunch you'll ever have, enough snacks and drinks to keep your mind fresh, lots of chances for networking and free entry into our amazing after-party. And you'll get priority tickets to our legendary <a href="/hackathon.html" ><strong>Hackathon</strong></a> when those tickets are released!</p>
+			</div>
+		</div>
+	</div>
 </div>
 
-<h2>The Venue</h2>
-<p>
-  This year we are proud to be holding the conference at <a href="http://www.theelectric.co.uk/" >The Electric</a>, the oldest working cinema in the UK.
-  You'll be treated by its beautiful rooms, super location - directly behing Grand Central Station (perfect for those who are using public transport) and complimentary snacks, drinks and lunch.
-</p>
-<div class="row">
-  <div class="col-sm-6" >
-    {% include conference-map.html %}
-  </div>
-  <div class="col-sm-6 text-left" >
-    <p>
-      The Electric Cinema
-      <br/>
-      47–49 Station Street
-      <br/>
-      Birmingham
-      <br/>B5 4DY
-    </p>
-  </div>
+<div class="content-darker venue">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header">The Venue</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				{% include conference-map.html %}
+			</div>
+			<div class="col-sm-6">
+				<p>This year we are proud to be holding the conference at The Electric, the oldest working cinema in the UK. You'll be treated by its beautiful rooms, comfortable cinema seats, super location - directly behing Grand Central Station (perfect for those who are using public transport) and complimentary snacks, drinks and lunch.</p>
+				<p><br><strong>The Electric Cinema </strong><br>47–49 Station Street <br>Birmingham <br>B5 4DY</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<a name="narrators" ></a>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header border">Conference Narrators</h4>
+			</div>
+		</div>
+    {% include narrators.html %}
+	</div>
 </div>
 
 <a name="cast"></a>
-<h2>The Cast</h2>
-<p>We've got an amazing cast of speakers, all here to share their knowledge with you.</p>
 {% include speakers.html %}
 
 <a name="schedule"></a>
-<h2>Schedule</h2>
-<p><strong>The Schedule will be released closer to the event</strong></p>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header">Schedule</h4>
+				<h5 class="sub-header">The Schedule will be released closer to the event</h5>
+			</div>
+		</div>
+  </div>
+</div>

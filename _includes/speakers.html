@@ -1,12 +1,28 @@
-{% for speaker in site.speakers %}
-  {% if speaker.narrator == false %}
-    <div class="col-sm-3 col-sm-offset-2">
+<div class="content bar-back">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header">Conference Cast</h4>
+				<h5 class="sub-header">"It is the supreme art of the teacher to awaken joy in creative expression and knowledge." - <em>Albert Einstein</em></h5>
+			</div>
+		</div>
+		<div class="row speaker-slots">
+      {% for speaker in site.speakers %}
+        {% if speaker.narrator == false %}
+          <div class="col-sm-3 col-sm-offset-2">
 
-      <div class="speaker-slot-fp">
-        <div class="speaker-image" style="background: url('/assets/img/{{ speaker.image }}') center;"></div>
-        <div class="speaker-info"><a href="">{{ speaker.name }}</a><hr>Keynote</div>
-      </div>
+            <div class="speaker-slot-fp">
+              <div class="speaker-image" style="background: url('/assets/img/{{ speaker.image }}') center;"></div>
+              <div class="speaker-info"><a href="">{{ speaker.name }}</a><hr>Keynote</div>
+            </div>
 
-    </div>
-  {% endif %}
-{% endfor %}
+          </div>
+        {% endif %}
+      {% endfor %}
+			<div class="col-sm-4 speaker-text col-sm-offset-1">
+				<p>Why not speak yourself? We currently have our CFP open, and we are accepting talks about anything you think our audience of makers, doers and hackers want to hear!</p>
+				<p><a href="{{ site.cfp }}">Hackference CFP Website</a></p>
+			</div>
+		</div>
+	</div>
+</div>
