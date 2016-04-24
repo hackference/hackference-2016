@@ -10,12 +10,12 @@
       {% for speaker in site.speakers %}
         {% if speaker.narrator == false %}
           <div class="col-sm-3 col-sm-offset-2">
-
-            <div class="speaker-slot-fp">
-              <div class="speaker-image" style="background: url('/assets/img/{{ speaker.image }}') center;"></div>
-              <div class="speaker-info"><a href="">{{ speaker.name }}</a><hr>Keynote</div>
-            </div>
-
+						<a href="{{ speaker.url }}">
+	            <div class="speaker-slot-fp">
+	              <div class="speaker-image" style="background: url('/assets/img/{{ speaker.image }}') center;"></div>
+	              <div class="speaker-info">{{ speaker.name }}<hr>Keynote</div>
+	            </div>
+						</a>
           </div>
         {% endif %}
       {% endfor %}
