@@ -1,20 +1,23 @@
 <div class="row">
-  {% for speaker in site.speakers %}
-    {% if speaker.narrator %}
-			<div class="col-sm-6 narrator">
-				<div class="row">
-					<div class="col-sm-5">
-            <img src='/assets/img/{{ speaker.image }}' width="100%"/>
+	{% for speaker in site.speakers %}
+	{% if speaker.narrator %}
+	<div class="col-sm-6"> 
+		<div class="narrator">
+			<div class="row">
+				<div class="col-sm-3">
+					<img src='/assets/img/{{ speaker.image }}' width="100%"/>
+				</div>
+				<div class="col-sm-9">
+					<div class="narrator-name">{{ speaker.name }}</div>
+					<div class="narrator-blurb">{% capture x %}
+						{{ speaker.description }}
+						{% endcapture %}{{ x | markdownify }}
 					</div>
-					<div class="col-sm-7">
-						<div class="narrator-name">{{ speaker.name }}</div>
-						<div class="narrator-blurb">{% capture x %}
-              {{ speaker.description }}
-            {% endcapture %}{{ x | markdownify }}</div>
-						<div class="narrator-meta">{% if speaker.github %}<a href='https://github.com/{{ speaker.github }}'>Github </a>{% endif %}{% if speaker.twitter %}<a href='https://twitter.com/{{ speaker.twitter }}'>Twitter </a>{% endif %}{% if speaker.website %}<a href='{{ speaker.website }}'>Website </a>{% endif %}</div>
-					</div>
+					<div class="narrator-meta">{% if speaker.github %}<a href='https://github.com/{{ speaker.github }}'>Github </a> &middot; {% endif %}{% if speaker.twitter %}<a href='https://twitter.com/{{ speaker.twitter }}'>Twitter </a> &middot; {% endif %}{% if speaker.website %}<a href='{{ speaker.website }}'>Website </a>{% endif %}</div>
 				</div>
 			</div>
-    {% endif %}
-  {% endfor %}
+		</div>
+	</div>
+	{% endif %}
+	{% endfor %}
 </div>
