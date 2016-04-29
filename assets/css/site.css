@@ -329,13 +329,18 @@ h5.sub-header {
 }
 .speaker-slot-fp .speaker-info {
   position: absolute;
-  bottom: 10%;
-  width: 60%;
-  left: 20%;
-  padding: 10px;
+  bottom: 5%;
+  width: 80%;
+  left: 10%;
+  opacity: 0.8;
+  padding: 5px;
   background: #FFF;
   text-align: center;
   border: 4px double #666;
+  transition: all 0.3s;
+}
+.speaker-slot-fp:hover .speaker-info {
+  opacity: 1;
 }
 .speaker-slot-fp .speaker-info hr {
   margin: 5px 0;
