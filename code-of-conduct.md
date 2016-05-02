@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Code of Conduct for Hackference 2016
+nav: coc
 ---
 
 <div class="content">

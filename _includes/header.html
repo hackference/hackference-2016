@@ -10,24 +10,14 @@
 	</div>
 </div>
 <div id="header">
-	<div class="slicknav_menu">
-		<a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">Menu</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
-		<ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-			<li><a href="/tickets.html" class="{% if page.current == "tickets" %}active{% endif %}" role="menuitem" tabindex="-1">Tickets</a></li>
-			<li><a href="/conference.html" class="{% if page.current == "conference" %}active{% endif %}" role="menuitem" tabindex="-1">Conference</a></li>
-			<li><a href="/hackathon.html" class="{% if page.current == "hackathon" %}active{% endif %}" role="menuitem" tabindex="-1">Hackathon</a></li>
-			<li><a href="/sponsors" class="{% if page.current == "sponsor" %}active{% endif %}" role="menuitem" tabindex="-1">Sponsors</a></li>
-			<li><a href="/code-of-conduct.html" class="{% if page.current == "code-of-conduct" %}active{% endif %}" role="menuitem" tabindex="-1">Code of conduct</a></li>
-		</ul>
-	</div>
 	<div class="container">
 		<div class="col-md-12">
 			<ul id="menu" class="top-nav hidden-sm hidden-xs">
-				<li><a href="/tickets.html" class="{% if page.current == "tickets" %}active{% endif %}">Tickets</a></li>
-				<li><a href="/conference.html" class="{% if page.current == "conference" %}active{% endif %}">Conference</a></li>
-				<li><a href="/hackathon.html" class="{% if page.current == "hackathon" %}active{% endif %}">Hackathon</a></li>
-				<li><a href="/sponsors" class="{% if page.current == "sponsor" %}active{% endif %}">Sponsors</a></li>
-				<li><a href="/code-of-conduct.html" class="{% if page.current == "code-of-conduct" %}active{% endif %}">Code of conduct</a></li>
+				<li><a href="/tickets.html" class="{% if page.nav == 'tickets' %}active{% endif %}">Tickets</a></li>
+				<li><a href="/conference.html" class="{% if page.nav == "conf" %}active{% endif %}">Conference</a></li>
+				<li><a href="/hackathon.html" class="{% if page.nav ==  "hack" %}active{% endif %}">Hackathon</a></li>
+				<li><a href="/sponsors" class="{% if page.nav == "sponsor" %}active{% endif %}">Sponsors</a></li>
+				<li><a href="/code-of-conduct.html" class="{% if page.nav == "coc" %}active{% endif %}">Code of conduct</a></li>
 			</ul>
 		</div>
 	</div>

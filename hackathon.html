@@ -1,6 +1,7 @@
 ---
 layout: default
 title: And now, the Hackathon
+nav: hack
 ---
 <div class="content">
 	<div class="container">
@@ -43,19 +44,19 @@ title: And now, the Hackathon
 		<div class="row">
 			<p class="big-intro">Some amazing companies are bringing some fantastic tech for you to play with at the hackathon - we'll let you know who they are closer to the event!</p>
 		</div>
-    <div class="row" >
-      {% for sponsor in site.sponsors %}
-        {% if sponsor.hackapi %}
-          <div class="col-sm-3 sponsor">
-            <a href="{{ sponsor.url }}">
-              <img src="/assets/images/{{ sponsor.image }}" />
-              <p>
-                {{ sponsor.name }}
-              </p>
-            </a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </row>
+		<div class="row" >
+			{% for sponsor in site.sponsors %}
+			{% if sponsor.hackapi %}
+			<div class="col-sm-3 sponsor">
+				<a href="{{ sponsor.url }}">
+					<img src="/assets/images/{{ sponsor.image }}" />
+					<p>
+						{{ sponsor.name }}
+					</p>
+				</a>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
 	</div>
 </div>
