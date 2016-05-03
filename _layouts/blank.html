@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="content">
+   <div class="container">
+    <div class="row">
+      {{ content }}
+    </div>
+  </div>
+</div>
+<!-- /Content type 1 -->
+{% include sponsors.html %}
+{% include footer.html %}
+{% include javascript.html %}
+{% include tracking.html %}
+</body>
+</html>

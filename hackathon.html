@@ -1,58 +1,62 @@
 ---
 layout: default
 title: And now, the Hackathon
+nav: hack
 ---
-<h1>Hackathon</h1>
-<div class="row">
-  <div class="col-sm-6" >
-  <h3>The Stars</h3>
-  <div id="hack" class="background-images" ></div>
-  <p>We will have plenty of API's and technology for you to play with. Lot's to hack on!</p>
-  </div>
-  <div class="col-sm-6" >
-    <h3>Snacks, Drinks &amp; Meals</h3>
-    <div id="breakfast" class="background-images" ></div>
-    <p>You'll find plenty of meals, snacks and drinks. Enough to fuel your hacks for 24 hours.</p>
-  </div>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="big-intro">Now in its forth year, the Hackference Hackathon portion is being held in the perfect <a href="https://birmingham.impacthub.net/">Impact Hub Birmingham</a> for the second year running. The hackathon is one of the biggest public hackathons in the United Kingdom - you don't have to be a student, or even a coder to come along and get involved! We will have plenty of API's and technology for you to put your skills to, for the chance to win some amazing prizes, or even just impress your peers!</p>
+				<p class="big-intro">We'll make sure you are fed well with proper food like making sure you'll have a roast dinner on Sunday, and a great meal to set you up for an all night coding session if you want to, we'll make sure you have enough drinks and snacks to keep you going and we'll give you the best internet connection we have ever seen at a Hackathon.</p>
+				<p class="big-intro">Tickets are not out yet, so subscribe to our mailing list (in the footer <i class="fa fa-arrow-down"></i>) and follow us on <a href="https://twitter.com/hackferencebrum">Twitter</a> to be notified when they will be available. Remember, by getting a conference ticket early you'll get priority tickets for the hackathon!</p>
+			</div>
+		</div>
+	</div>
 </div>
 
-<h2>The Location</h2>
-<p>
-  We are at <a href="http://birmingham.impacthub.net/" >Impact Hub Birmingham</a> again this year.
-  Impact Hub is a fantastic coworking space, a community of purpose driven makers, doers, entrepreneurs, activists and dreamers committed to building a better city and world.
-</p>
-<div class="row">
-  <div class="col-sm-6" >
-    {% include hackathon-map.html %}
-  </div>
-  <div class="col-sm-6 text-left" >
-    <p>
-      Impact Hub Birmingham
-      <br/>
-      Walker Building
-      <br/>
-      58 Oxford Street
-      <br/>
-      Birmingham
-      <br/>
-      B5 5NY
-    </p>
-  </div>
+<div class="content-darker venue">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header">The Venue</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				{% include hackathon-map.html %}
+			</div>
+			<div class="col-sm-6">
+				<p>We are at Impact Hub Birmingham again this year. Impact Hub is a fantastic coworking space, a community of purpose driven makers, doers, entrepreneurs, activists and dreamers committed to building a better city and world.</p>
+				<p><br><strong>Impact Hub Birmingham</strong><br>Walker Building<br>58 Oxford Street<br>Birmingham <br>B5 5NY</p>
+			</div>
+		</div>
+	</div>
 </div>
 
-<h2>Hack Partners</h2>
-<p>Some amazing companies are bringing some fantastic tech for you to play with at the hackathon.</p>
-<div class="row" >
-{% for sponsor in site.sponsors %}
-  {% if sponsor.hackapi %}
-    <div class="col-sm-3 sponsor">
-      <a href="{{ sponsor.url }}">
-        <img src="/assets/images/{{ sponsor.image }}" />
-        <p>
-          {{ sponsor.name }}
-        </p>
-      </a>
-    </div>
-  {% endif %}
-{% endfor %}
-</row>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header border">Hackathon Partners</h4>
+			</div>
+		</div>
+		<div class="row">
+			<p class="big-intro">Some amazing companies are bringing some fantastic tech for you to play with at the hackathon - we'll let you know who they are closer to the event!</p>
+		</div>
+		<div class="row" >
+			{% for sponsor in site.sponsors %}
+			{% if sponsor.hackapi %}
+			<div class="col-sm-3 sponsor">
+				<a href="{{ sponsor.url }}">
+					<img src="/assets/images/{{ sponsor.image }}" />
+					<p>
+						{{ sponsor.name }}
+					</p>
+				</a>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

@@ -1,23 +1,28 @@
-<div class="row">
-  {% for speaker in site.speakers %}
-    {% if speaker.narrator == false %}
-      <div class="col-md-3 col-xs-6 speaker">
-        <a href='/speakers/{{ speaker.url }}'>
-          <img src='/assets/images/{{ speaker.image }}' width="100%"/>
-          {{ speaker.name }}
-        </a>
-        <p>{% if speaker.tagline %}{{ speaker.tagline }}{% endif %}</p>
-        {% if speaker.github %}<a href='https://github.com/{{ speaker.github }}'><i class="fa fa-github"></i></a>{% endif %}
-        {% if speaker.twitter %}<a href='https://twitter.com/{{ speaker.twitter }}'><i class="fa fa-twitter"></i></a>{% endif %}
-        {% if speaker.website %}<a href='{{ speaker.website }}'><i class="fa fa-globe"></i></a>{% endif %}
-      </div>
-    {% endif %}
-  {% endfor %}
-  <div class="col-md-3 col-xs-6 speaker">
-    <a href='{{ site.cfp }}'>
-      <i class="fa fa-user fa-5x speak-yourself"></i>
-      <br/>
-      Why not speak yourself?
-    </a>
-  </div>
+<div class="content bar-back">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 class="sub-header">Conference Cast</h4>
+				<h5 class="sub-header">"It is the supreme art of the teacher to awaken joy in creative expression and knowledge." - <em>Albert Einstein</em></h5>
+			</div>
+		</div>
+		<div class="row speaker-slots">
+      {% for speaker in site.speakers %}
+        {% if speaker.narrator == false %}
+          <div class="col-sm-3 col-sm-offset-2">
+						<a href="{{ speaker.url }}">
+	            <div class="speaker-slot-fp">
+	              <div class="speaker-image" style="background: url('/assets/img/{{ speaker.image }}') center;"></div>
+	              <div class="speaker-info">{{ speaker.name }}<hr>Keynote</div>
+	            </div>
+						</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+			<div class="col-sm-4 speaker-text col-sm-offset-1">
+				<p>Why not speak yourself? We currently have our CFP open, and we are accepting talks about anything you think our audience of makers, doers and hackers want to hear!</p>
+				<p><a href="{{ site.cfp }}">Hackference CFP Website</a></p>
+			</div>
+		</div>
+	</div>
 </div>

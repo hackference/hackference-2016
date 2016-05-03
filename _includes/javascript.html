@@ -1,3 +1,25 @@
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.7/jquery.slicknav.min.js"></script>
+<script>
+  $(function () {
+    $('#menu').slicknav({
+      prependTo: '#header',
+      label: 'Menu',
+    });
+    $('.slicknav_btn').on('click', function () {
+      //-- Scroll to top of page
+      $('html, body').animate({
+        scrollTop: ($(this).offset().top - 90) + 'px',
+      }, 'slow');
+    });
+  });
+</script>
+<script>
+$(function () {
+  $('body').on('click', '#tito-hackference-hackference-2016-1-show-discount-code a', function() {
+      $('#tito-hackference-hackference-2016-1-edit-discount-code').toggle();
+    });
+});
+</script>
