@@ -84,12 +84,10 @@ nav: sponsor
 			  {% if sponsor.level == "bronze" %}
 			    <div class="row text-left" >
 			      <div class="col-sm-3">
-			        <a href="{{ sponsor.url }}" >
-			          <img src="/assets/img/{{ sponsor.image }}" width="100%" />
-			        </a>
+		          <img src="/assets/img/{{ sponsor.image }}" width="100%" />
 			      </div>
 			      <div class="col-sm-9">
-			        <h3><a href="{{ sponsor.url }}" >{{ sponsor.name }}</a></h3>
+			        <h3>{{ sponsor.name }}</h3>
 			        <p>
 			          {{ sponsor.description }}
 			        </p>
