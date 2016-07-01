@@ -310,6 +310,10 @@ h5.sub-header {
   }
 }
 
+.speaker-slots .speaker-box {
+    margin-bottom: 10px;
+}
+
 .speaker-slot-fp {
   height: 250px;
   border: 4px double #FFF;
