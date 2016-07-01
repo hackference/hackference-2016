@@ -464,3 +464,7 @@ h5.sub-header {
 .starring {
   margin: 0 0 50px !important;
 }
+
+.hack.sponsor img {
+  width: 100%;
+}
