@@ -17,15 +17,22 @@ layout: default
         {% capture x %}
         {{ page.description }}
         {% endcapture %}{{ x | markdownify }}
-        {% if page.talk_title %}
-          <h4 class="sub-header border">Filmography</h4>
-          <h4><strong>{{ page.talk_title }}</strong></h4>
-          {% capture x %}
-          {{ page.talk_abstract }}
-          {% endcapture %}{{ x | markdownify }}
-        {% endif %}
       </div>
     </div>
+    {% if page.talk_title %}
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="sub-header border" style="margin-bottom: 60px">Filmography</h4>
+      </div>
+      <div class="col-md-4 speaker-talk-title">
+        {{ page.talk_title }}
+      </div>
+      <div class="col-md-8 speaker-description">
+        {% capture x %}
+        {{ page.talk_abstract }}
+        {% endcapture %}{{ x | markdownify }}
+      </div>
+      {% endif %}
   </div>
 </div>
 

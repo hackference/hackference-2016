@@ -472,3 +472,11 @@ h5.sub-header {
 .hack.sponsor img {
   width: 100%;
 }
+
+.speaker-talk-title {
+  text-align: left;
+  padding: 0px 20px 30px;
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 700;
+}
