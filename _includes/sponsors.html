@@ -9,7 +9,7 @@
         <!-- Executive Producer/Platinum -->
         {% for sponsor in site.sponsors %}
           {% if sponsor.level == "platinum" %}
-            <div class="col-sm-6 col-xs-12 sponsor">
+            <div class="col-sm-6 col-xs-12 newsponsor">
               <a href="{{ sponsor.website }}">
                 <img src="/assets/img/{{ sponsor.image }}" width="100%">
       					<div class="sponsor-name">{{ sponsor.name }}</div>
@@ -24,11 +24,11 @@
         <!-- Associate Producer/Gold -->
         {% for sponsor in site.sponsors %}
           {% if sponsor.level == "gold" %}
-    				<div class="col-sm-4 col-xs-6 sponsor">
+    				<div class="col-sm-6 col-sm-offset-3 col-xs-12 newsponsor">
               <a href="{{ sponsor.website }}">
                 <img src="/assets/img/{{ sponsor.image }}"  width="100%">
-      					<div class="sponsor-name smaller">{{ sponsor.name }}</div>
-      					<div class="sponsor-meta smaller">Associate Producer</div>
+      					<div class="sponsor-name">{{ sponsor.name }}</div>
+      					<div class="sponsor-meta">Associate Producer</div>
               </a>
     				</div>
           {% endif %}
@@ -37,11 +37,14 @@
 			<!-- Rest sponsorship get col-3 -->
 			<div class="row">
         <!-- Assistant Producer/Silver -->
+        <div class="col-sm-3">&nbsp;</div> 
         {% for sponsor in site.sponsors %}
           {% if sponsor.level == "silver" %}
-            <div class="col-sm-3 sponsor">
+            <div class="col-sm-3 newsponsor">
               <a href="{{ sponsor.website }}">
                 <img src="/assets/img/{{ sponsor.image }}" width="100%">
+                <div class="sponsor-name smaller">{{ sponsor.name }}</div>
+                <div class="sponsor-meta smaller">Assistant Producer</div>
               </a>
             </div>
           {% endif %}
@@ -52,7 +55,7 @@
         <!-- Coordinating Producer/Bronze -->
         {% for sponsor in site.sponsors %}
           {% if sponsor.level == "bronze" %}
-            <div class="col-sm-3 sponsor">
+            <div class="col-sm-offset-4 col-sm-4 newsponsor">
               <a href="{{ sponsor.website }}">
                 <img src="/assets/img/{{ sponsor.image }}" width="100%">
               </a>
