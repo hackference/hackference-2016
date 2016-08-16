@@ -28,9 +28,11 @@ nav: sponsor
 			      </div>
 			      <div class="col-sm-9">
 			        <h3>{{ sponsor.name }}</h3>
-			        <p>
-			          {{ sponsor.description }}
-			        </p>
+			        <div>
+								{% capture x %}
+				        {{ sponsor.description }}
+				        {% endcapture %}{{ x | markdownify }}
+			        </div>
 			        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
 			        {% if sponsor.twitter %}<p><a href="https://twitter.com/{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
 			        {% if sponsor.github %}<p><a href="https://github.com/{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
@@ -48,9 +50,11 @@ nav: sponsor
 			      </div>
 			      <div class="col-sm-9">
 			        <h3>{{ sponsor.name }}</h3>
-			        <p>
-			          {{ sponsor.description }}
-			        </p>
+			        <div>
+								{% capture x %}
+				        {{ sponsor.description }}
+				        {% endcapture %}{{ x | markdownify }}
+			        </div>
 			        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
 			        {% if sponsor.twitter %}<p><a href="https://twitter.com/{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
 			        {% if sponsor.github %}<p><a href="https://github.com/{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
@@ -68,9 +72,11 @@ nav: sponsor
 			      </div>
 			      <div class="col-sm-9">
 			        <h3>{{ sponsor.name }}</h3>
-			        <p>
-			          {{ sponsor.description }}
-			        </p>
+			        <div>
+								{% capture x %}
+				        {{ sponsor.description }}
+				        {% endcapture %}{{ x | markdownify }}
+			        </div>
 			        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
 			        {% if sponsor.twitter %}<p><a href="https://twitter.com/{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
 			        {% if sponsor.github %}<p><a href="https://github.com/{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}
@@ -88,9 +94,11 @@ nav: sponsor
 			      </div>
 			      <div class="col-sm-9">
 			        <h3>{{ sponsor.name }}</h3>
-			        <p>
-			          {{ sponsor.description }}
-			        </p>
+			        <div>
+								{% capture x %}
+				        {{ sponsor.description }}
+				        {% endcapture %}{{ x | markdownify }}
+			        </div>
 			        {% if sponsor.website %}<p><a href="{{ sponsor.website }}" ><i class="fa fa-globe"></i> {{ sponsor.website }}</a></p>{% endif %}
 			        {% if sponsor.twitter %}<p><a href="https://twitter.com/{{ sponsor.twitter }}" ><i class="fa fa-twitter"></i> @{{ sponsor.twitter }}</a></p>{% endif %}
 			        {% if sponsor.github %}<p><a href="https://github.com/{{ sponsor.github }}" ><i class="fa fa-github"></i> {{ sponsor.github }}</a></p>{% endif %}

@@ -4,7 +4,9 @@ name: Improbable
 title: Presenting Improbable
 image: improbable.png
 level: silver
-description: Improbable grants you the tools to build a world where everything matters. Where lasting scars tell stories of epic battles. Where a seed planted yesterday grows into today's tree, tomorrow's forest. Where killing that monster really does save the town. Where people are more than players, experiences are more than games.
+description: |
+
+  Improbable grants you the tools to build a world where everything matters. Where lasting scars tell stories of epic battles. Where a seed planted yesterday grows into today's tree, tomorrow's forest. Where killing that monster really does save the town. Where people are more than players, experiences are more than games.
 website: https://improbable.io
 twitter: Improbableio
 github: improbable-io

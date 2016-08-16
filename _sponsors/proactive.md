@@ -5,6 +5,7 @@ title: Presenting Proactive
 image: proactive.png
 level: bronze
 description: |
+
   We are pleased to announce the support of Proactive as a sponsor.
 
   Proactive is the “go to” solution for Devs and Designers who need proper help with their accounts and tax returns. And their prices are highly competitive!
