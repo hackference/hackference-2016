@@ -2,7 +2,7 @@
 layout: sponsor
 name: Pebble
 title: Presenting Pebble
-image: pusher.png
+image: pebble.png
 level: bronze
 description: |
 
