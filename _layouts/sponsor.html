@@ -15,7 +15,11 @@ layout: default
           </div>
           <div class="col-sm-8">
             <h1>Presenting {{ page.name }}</h1>
-            <p class="big-intro">{{ page.description }}</p>
+            <div class="big-intro">
+							{% capture x %}
+			        {{ page.description }}
+			        {% endcapture %}{{ x | markdownify }}
+						</div>
           </div>
         </div>
       </div>

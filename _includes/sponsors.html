@@ -52,9 +52,11 @@
 			<!-- Rest sponsorship get col-3 -->
 			<div class="row">
         <!-- Coordinating Producer/Bronze -->
+				<div class="col-sm-2">
+				</div>
         {% for sponsor in site.sponsors %}
           {% if sponsor.level == "bronze" %}
-            <div class="col-sm-offset-4 col-sm-4 newsponsor">
+            <div class="col-sm-3 newsponsor">
               <a href="{{ sponsor.website }}">
                 <img src="/assets/img/{{ sponsor.image }}" width="100%">
               </a>
