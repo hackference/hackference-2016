@@ -375,7 +375,7 @@ h5.sub-header {
 
 .sponsor, .newsponsor {
   margin-top: 30px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
@@ -481,4 +481,8 @@ h5.sub-header {
   font-size: 2em;
   line-height: 1.5em;
   font-weight: 700;
+}
+
+.schedule a {
+  color: #000000;
 }
