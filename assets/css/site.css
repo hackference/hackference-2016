@@ -47,6 +47,11 @@ body {
   background: #212223;
 }
 
+#hackference2017 {
+  background: #212223;
+  color: #ffffff;
+}
+
 #hero {
   width: 100%;
   background: url(../img/top2.png) center bottom repeat-x;
